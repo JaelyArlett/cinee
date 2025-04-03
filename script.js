@@ -1,0 +1,1 @@
+function cambiarMensaje() { document.getElementById("mensaje").innerText = "analisis.";}

@@ -1,0 +1,124 @@
+/* ============================= */
+/*      ESTILOS MEJORADOS        */
+/* ============================= */
+
+/* Colores */
+:root {
+    --fondo-oscuro: #121212;
+    --dorado: #FFD700;
+    --rojo-oscuro: #b22222;
+    --azul-oscuro: #0047AB;
+    --gris-claro: #f4f4f4;
+    --gris-oscuro: #222;
+}
+
+/* Fondo del banner con efecto de desvanecimiento */
+.pagina-inicio .banner {
+    background-image: url('https://th.bing.com/th/id/R.e5fc7f4c85df935e6748d88718aa7991?rik=xce9%2bWeUivH04w&pid=ImgRaw&r=0'); /* Imagen de inicio */
+}
+
+.pagina-analisis .banner {
+    background-image: url('https://th.bing.com/th/id/R.b5b0d05732fa61c1d72eb21cec868ea0?rik=UeTPTQSyooqUjA&pid=ImgRaw&r=0'); /* Imagen para análisis */
+}
+
+.pagina-inicio .banner, .pagina-analisis .banner {
+    position: relative;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--dorado);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Animación de desvanecimiento */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: var(--fondo-oscuro);
+    color: var(--dorado);
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Encabezado con degradado */
+header {
+    background: linear-gradient(90deg, var(--gris-oscuro), var(--azul-oscuro));
+    color: var(--dorado); 
+    padding: 20px 0;
+    box-shadow: 0px 4px 10px rgba(255, 215, 0, 0.3);
+}
+
+/* Navegación */
+nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: var(--dorado);
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: var(--gris-claro);
+    transform: scale(1.1);
+}
+
+/* Contenido */
+.content {
+    padding: 20px;
+    text-align: left;
+}
+
+/* Botón con nuevo color y animación */
+button {
+    background: var(--rojo-oscuro);
+    color: var(--gris-claro);
+    padding: 12px 25px;
+    border: 2px solid var(--dorado);
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 5px 15px rgba(255, 215, 0, 0.5);
+    background: var(--azul-oscuro);
+}
+
+/* Pie de página */
+footer {
+    background: var(--gris-oscuro);
+    color: var(--dorado);
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+    box-shadow: 0px -4px 10px rgba(255, 215, 0, 0.3);
+}
